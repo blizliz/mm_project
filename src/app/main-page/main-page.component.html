@@ -1,0 +1,28 @@
+<mat-toolbar>
+  <span>Визуализация эмоций персонажей художественного произведения "Мастер и Маргарита"</span>
+</mat-toolbar>
+
+<div id="container">
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab *ngFor="let tab of tabs" [label]="tab">
+      <div *ngIf="tab == '1 глава'">
+        <plotly-plot [data]="data1" [layout]="layout1"></plotly-plot>
+      </div>
+      <div *ngIf="tab == '2 глава'">
+        <plotly-plot [data]="data2" [layout]="layout2"></plotly-plot>
+      </div>
+      <div *ngIf="tab == '15 глава'">
+        <plotly-plot [data]="data15" [layout]="layout15"></plotly-plot>
+      </div>
+      <div *ngIf="tab == '19 глава'">
+        <plotly-plot [data]="data19" [layout]="layout19"></plotly-plot>
+      </div>
+      <div *ngIf="tab == '23 глава'">
+        <plotly-plot [data]="data23" [layout]="layout23"></plotly-plot>
+      </div>
+      <div *ngIf="tab == '25 глава'">
+        <plotly-plot [data]="data25" [layout]="layout25"></plotly-plot>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

@@ -1,0 +1,13 @@
+#container {
+  background-image: url("src/assets/images/background.png");
+  /*display: flex;*/
+}
+
+mat-toolbar {
+  background-color: #b99361;
+  color: beige;
+}
+
+.mat-tab {
+  height: 100%;
+}
